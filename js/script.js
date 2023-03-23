@@ -2,8 +2,13 @@ function newItem() {
 	const list = $("#list");
 	const inputValue = $("#input").val();
 	const li = $(`<li>${inputValue}</li>`);
-	list.append(li);
 
+	if (inputValue.length < 1) {
+		alert("Please enter an Item to add on the list");
+	} else {
+		list.append(li);
+		$("#input").val("");
+	}
 	// Crossing out an Item from the list of items
 	function crossOut() {
 		li.toggleClass("strike");
