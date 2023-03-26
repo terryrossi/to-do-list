@@ -1,3 +1,4 @@
+// const toDoListApp = (function newItem() {
 function newItem() {
 	const list = $("#list");
 	const inputValue = $("#input").val();
@@ -13,10 +14,10 @@ function newItem() {
 	function crossOut() {
 		li.toggleClass("strike");
 	}
-	li.on("click", crossOut);
-	// li.on("dblclick", function crossOut() {
-	// 	li.toggleClass("strike");
-	// });
+	// li.on("click", crossOut);
+	li.on("dblclick", function crossOut() {
+		li.toggleClass("strike");
+	});
 
 	// ADDING DELETE BUTTON 'X'
 	const crossOutButton = $(`<crossOutButton>X</crossOutButton>`);
@@ -30,4 +31,7 @@ function newItem() {
 
 	// MAKE LIST RE-ORDERABLE
 	$("#list").sortable();
+	// return {
+	// 	newItem,
 }
+// })();
