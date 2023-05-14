@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
 
 body {
-	font: normal normal 13px/16px "Open Sans", sans-serif;
+	font: normal normal 13px/16px 'Open Sans', sans-serif;
 	background: #dfdfdf;
 }
 
@@ -12,6 +12,9 @@ body {
 	margin-top: 40px;
 	background: white;
 	border-radius: 5px;
+}
+.title {
+	text-align: center;
 }
 
 form {
